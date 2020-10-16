@@ -237,6 +237,7 @@ body{
     max-height:750px;
     background-color:#555;
     opacity:.35;
+    color:#2F4F4F;
     z-index:10
 }
 @media (max-width: 1180px){
@@ -499,7 +500,7 @@ body{
 .side-nav>li{
     position:relative;
     top:-5px;
-    color:#fff;
+    color:#2F4F4F;
     font-size:6px;
     cursor:pointer
 }
@@ -507,7 +508,7 @@ body{
     position:relative;
     top:3px;
     left:10px;
-    color:#fff;
+    color:#2F4F4F;
     font-size:14px;
     font-weight:300;
     opacity:0;
@@ -517,7 +518,7 @@ body{
     position:absolute;
     top:3px;
     left:10px;
-    color:#555;
+    color:#2F4F4F;
     font-size:14px;
     font-weight:300
 }
@@ -537,19 +538,21 @@ body{
     content:"05"
 }
 .side-nav li.is-active{
-    color:#0f33ff;
+    color:#2F4F4F;
+    font-weight: bold;
     -webkit-transition:color .4s ease-in-out;
     transition:color .4s ease-in-out
 }
 .side-nav li.is-active span{
     opacity:1;
     visibility:visible;
+    font-weight: bold;
     -webkit-transition:opacity .4s ease-in-out;
     transition:opacity .4s ease-in-out
 }
 .side-nav li.is-active::before{
     left:-33px;
-    color:#fff
+    color:#2F4F4F;
 }
 .intro{
     position:relative;
@@ -603,7 +606,8 @@ body{
     font-size:68px;
     font-weight:900;
     line-height:1;
-    z-index:1
+    z-index:1;
+    color:black;
 }
 .intro--banner button{
     position:relative;
@@ -611,7 +615,7 @@ body{
     font-weight:700;
     text-transform:uppercase;
     background-color:transparent;
-    border:none
+    border:none;
 }
 .intro--banner button .btn-background{
     position:absolute;
@@ -1518,6 +1522,7 @@ body{
     transition:transform .2s,opacity .2s,-webkit-transform .2s
 }
 .outer-nav>li.is-vis{
+    color: #2F4F4F;
     -webkit-transform:translateX(0) translateZ(0);
     transform:translateX(0) translateZ(0);
     opacity:1;
